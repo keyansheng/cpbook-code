@@ -73,7 +73,7 @@ public:
     computeLCP();                                // O(n)
   }
 
-  SuffixArray(const string& initialT) : T(initialT.c_str()), n((int)initialT.length()) {
+  SuffixArray(string& initialT) : T(initialT.c_str()), n((int)initialT.length()) {
     constructSA();                               // O(n log n)
     computeLCP();                                // O(n)
   }
